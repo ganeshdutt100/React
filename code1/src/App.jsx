@@ -3,6 +3,7 @@
 
 import Code2UseEffect from "./components/Code2UseEffect";
 import Code3 from "./components/Code3";
+import { Code4 } from "./components/Code4";
 
 function App() {
   // const eventHandler = () => alert("Clicked!");
@@ -18,7 +19,8 @@ function App() {
     <ChildComponents onClick={eventHandler}></ChildComponents> */}
 
       {/* <Code2UseEffect /> */}
-      <Code3 />
+      {/* <Code3 /> */}
+      <Code4 />
     </>
   );
 }
