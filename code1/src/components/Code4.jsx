@@ -9,17 +9,21 @@ export const Code4 = () => {
     if (running) {
       timer = setInterval(() => {
         setSeconds((x) => x + 1);
-      }, 1000);
-    } else {
-      clearInterval(timer);
+      }, 100);
     }
+    return () => clearInterval(timer);
   }, [running]);
+
+  const handleReset = () => {
+    setRunning(false);
+    setSeconds(0);
+  };
   return (
     <div>
       <h2> StopWatch : {seconds}</h2>
       <button onClick={() => setRunning(true)}>Start</button>
       <button onClick={() => setRunning(false)}>Stop</button>
-      <button onClick={() => setRunning(0)}>Reset</button>
+      <button onClick={handleReset}>Reset</button>
 
       {/* <button>Reset</button> */}
     </div>
