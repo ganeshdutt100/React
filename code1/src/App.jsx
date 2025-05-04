@@ -2,6 +2,7 @@
 // import { Navbar } from "./components/Navbar";
 
 import Code2UseEffect from "./components/Code2UseEffect";
+import Code3 from "./components/Code3";
 
 function App() {
   // const eventHandler = () => alert("Clicked!");
@@ -16,7 +17,8 @@ function App() {
     <FirstChild  />
     <ChildComponents onClick={eventHandler}></ChildComponents> */}
 
-      <Code2UseEffect />
+      {/* <Code2UseEffect /> */}
+      <Code3 />
     </>
   );
 }

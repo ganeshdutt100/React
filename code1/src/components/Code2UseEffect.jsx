@@ -4,6 +4,7 @@ const Code2UseEffect = () => {
   const [count, setCount] = useState(10);
   useEffect(() => {
     console.log(`count Updated ${count}`);
+    // document.title = `Count: ${count}`;
   }, [count]);
   return (
     <div>
